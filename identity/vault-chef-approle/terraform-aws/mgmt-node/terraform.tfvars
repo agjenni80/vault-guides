@@ -1,28 +1,28 @@
-aws_region = "us-east-1"
+aws_region = "us-east-2"
 
 # All resources will be tagged with this
 environment_name = "vault-chef-approle-demo"
 
 # S3 bucket for demo
-s3_bucket_name = "my-s3-bucket-name"
+s3_bucket_name = "ptfe-ajennings"
 
 # URL for Vault (open source) zip file
-vault_zip_url = "https://releases.hashicorp.com/vault/0.9.5/vault_0.9.5_linux_amd64.zip"
+vault_zip_url = "https://releases.hashicorp.com/vault/0.10.4/vault_0.10.4_linux_amd64.zip"
 
 # Instance size
 instance_type = "t2.medium"
 
 # VPC ID in which to create security group(s)
-vpc_id = "vpc-123456"
+vpc_id = "vpc-61f58809"
 
 # Subnet ID in which to install
 subnet_id = "subnet-123456"
 
 # SSH key name to access EC2 instances
-key_name = "my-key-name"
+key_name = "tfe-ajennings.pem"
 
 # File path to EC2 SSH key (for Chef provisioner connection)
-ec2_pem = "/path/to/EC2/private_key.pem"
+ec2_pem = "/Users/agjennings/tfe-ajennings.pem"
 
 //--------------------------------------------------------------------
 // Chef Server Vars
